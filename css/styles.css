@@ -1,0 +1,185 @@
+body {
+  min-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+}
+body, select, textarea, button {
+  color: rgb(146, 146, 146);
+  font-family: sans-serif;
+}
+input, select, textarea {
+  border: 1px solid rgb(146, 146, 146);
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+}
+a, h1 span {
+  color: rgb(0, 173, 241);
+}
+.section {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.section input[type=text],
+.section input[type=email],
+.section select,
+textarea {
+  width: 100%;
+  padding: 10px 0 10px 10px;
+  margin-bottom: 10px;
+  font-size: 100%;
+}
+.section select {
+  appearance:  none;
+  overflow: hidden;
+  cursor: crosshair;
+}
+/*.section1 form {
+  position: relative;
+}*/
+/*.section1 select::after {
+  content: "";
+  display: block;
+  width: 13px;
+  height: 13px;
+  background-color: green;
+  position: absolute;
+  right: 50%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}*/
+.section1 {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  text-transform: capitalize;
+  color: rgb(16, 38, 106);
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 30px;
+  line-height: 1.5;
+}
+.section1 input[type=email]:invalid {
+  border-color: rgba(255, 0, 0, 0.5);
+}
+.section1 form select option::after {
+  content: "";
+  display: inline-block;
+  box-sizing: border-box;
+  margin-left: 10px;
+  width: 0;
+  height: 0;
+  border-width: 5px;
+  border-color: transparent grey;
+  border-style: solid none solid solid;
+}
+.section2 {
+  background-color: rgb(239, 247, 250);
+  padding: 20px;
+  border: 1px solid rgb(146, 146, 146);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+h2 {
+  color: rgba(16, 38, 106, 0.5);
+  padding-bottom: 40px;
+  text-transform: capitalize;
+}
+.section2 .short-desicription {
+  height: 120px;
+}
+hr {
+   border: none;
+}
+.section2 button {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 173, 241);
+  text-align: center;
+  padding: 10px 0 10px 10px;
+  border-radius: 4px;
+  font-size: 100%;
+  cursor: pointer;
+}
+.section2 .add-url {
+  margin-bottom: 20px;
+  width: 100%;
+}
+.section2 .save-add {
+  width: 100%;
+}
+.section3 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  line-height: 1.5;
+}
+.section3 label {
+  display: inline-flex;
+  margin-bottom: 20px;
+  font-size: 75%;
+  cursor: pointer;
+}
+.section3 label input[type=checkbox] {
+  justify-content: flex-start;
+  margin-right: 5px;
+}
+/*.section3 .item1 label span .checkbox::befor {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgb(146, 146, 146);
+  border-radius: 4px;
+  background-color: green;
+}*/
+.section3 label input + .checkbox {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: 1px solid rgb(146, 146, 146);
+  border-radius: 4px;
+  margin-right: 5px;
+}
+.section3 label input:checked + .checkbox {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/icons/checkmark.png);
+}
+.section3 label input {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+.section3 .agreement,
+.section3 .protection {
+  margin-bottom: 40px;
+  font-size: 75%;
+}
+.section3 .item2 button {
+  background-color: rgb(15, 195, 0);
+  color: rgb(255, 255, 255);
+  width: 100%;
+  text-transform: uppercase;
+  vertical-align: top;
+  font-size: 100%;
+  border-radius: 20px;
+  padding: 10px 0 10px 10px;
+  cursor: pointer;
+}
+.section3 .item2 button::after {
+  content: "";
+  display: inline-block;
+  box-sizing: border-box;
+  margin-left: 10px;
+  width: 0;
+  height: 0;
+  border-width: 5px;
+  border-color: transparent white;
+  border-style: solid none solid solid;
+}
