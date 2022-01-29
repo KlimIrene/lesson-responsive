@@ -1,54 +1,93 @@
 @media screen and (min-width: 1200px) {
-	.section1 form {
+	.section {
+  		margin-left: 40px;
+ 		margin-right: 40px;
+	}
+	.section input[type=text],
+	.section input[type=email],
+	.section select,
+	textarea {
+		font-size: 20px;
+		}
+	.section1 h1 {
+		padding-top: 10px;
+		padding-bottom: 50px;
+	}
+	.section1 .form1 {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-between;
+		justify-content: space-around;
 	}
-	.section1 form input[type=text],
-	.section1 form input[type=email],
-	.section1 form select {
-		width: 49.5%;
+	.section1 .form1 input[type=text],
+	.section1 .form1 input[type=email],
+	.section1 .form1 select {
+		width: 49%;
+		height: 50px;
 		display: block;
+		margin-bottom: 25px;
+	}
+	h2{
+		margin-top: 15px;
+		font-size: 19px;
 	}
 	hr {
   		 color: rgb(146, 146, 146);
   		 background-color: rgb(146, 146, 146);
 		 height: 1px;
-		 margin-bottom: 20px;
+		 margin-bottom: 50px;
 	}
-	.section2 form .box1 {
+	.section2 .form2 input[type=text] {
+		height: 55px;
+		display: block;
+		margin-bottom: 25px;
+	}
+	.s
+	.section2 .form2 textarea {
+		height: 130px;
+		display: block;
+		margin-bottom: 25px;
+	}
+	.section2 .form2 .box1 {
 		display: flex;
 		justify-content: space-between;
-		align-items: stretch;
+		margin-bottom: 4px;
 	}
-	.section2 form .box1 .box1-left {
+	.section2 .form2 .box1 .box1-left {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		width: 99%;
 	}
-	.section2 form .box1 textarea,
-	.section2 form .box1 .box1-left {
+	.section2 .form2 .box1 textarea,
+	.section2 .form2 .box1 .box1-left {
 		width: 49.5%;
 	}
-	.section2 form .box2 {
+	.section2 .short-desicription {
+		height: 130px;
+		
+		}
+	.section2 .form2 .box2 {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 	}
-	.section2 form .box2 input {
-		width: 89%;
+	.section2 .form2 .box2 input {
+		width: 86%;
 		margin: 0;
 	}
-	.section2 form .box2 .add-url {
+	.section2 .form2 .box2 .add-url {
 		display: block;
-		width: 10%;
+		width: 11%;
 		margin: 0;
 	}
-	.section2 form .save-add {
-		display: block;
-		width: 20%;
-		margin: 20px auto 10px auto;
+	.section2 .form2 .box3 {
+		text-align: center;
+	}
+	.section2 .form2 .save-add {
+		display: inline-block;
+		width: 300px;
+		margin: 35px auto 10px auto;
+		text-align: center;
 	}
 	.section3 {
 		display: flex;
@@ -61,5 +100,11 @@
 	.section3 .item2 {
 		display: block;
 		width: 15%;
+	}
+	.section3 .item2 button {
+		font-size: 18px;
+		border-radius: 30px;
+		height: 33%;
+		margin-top: 10px;
 	}
 }
