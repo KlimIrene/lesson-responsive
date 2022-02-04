@@ -1,0 +1,55 @@
+@import "../abstracts/variables";
+body {
+    min-width: 375px;
+    margin-left: auto;
+    margin-right: auto; 
+  }
+  body, select, textarea, button {
+    color: $mainText;
+    font-family: sans-serif;
+  }
+  input, select, textarea {
+    border: 1px solid $mainText;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+  }
+  input:focus, 
+  select:focus, 
+  textarea:focus {
+    outline: 3px solid rgb(16, 38, 106);
+  }
+  a, h1 span {
+    color: $light;
+  }
+  .section {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+ 
+  .section input[type=text],
+  .section input[type=email],
+  .section select,
+  textarea {
+    width: 100%;
+    height: 50px;
+    padding: 14px 0 10px 15px;
+    margin-bottom: 10px;
+    font-size: 17px;
+  }
+  .section select {
+    appearance:  none;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  @media screen and (min-width: 768px) {
+    .section {
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+    .section input[type=text],
+    .section input[type=email],
+    .section select,
+    textarea {
+		font-size: 20px;
+		}
+  }

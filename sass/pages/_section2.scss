@@ -1,0 +1,116 @@
+@import "../abstracts/variables";
+.section2 {
+    background-color: rgb(239, 247, 250);
+    padding: 20px;
+    border: 1px solid $mainText;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+  
+    h2 {
+        color: rgba(16, 38, 106, 0.5);
+        padding-bottom: 35px;
+        margin-top: 4px;
+        font-size: 16.5px;
+        text-transform: capitalize;
+    }
+    .box1-left select {
+        position: relative;
+    }
+    select {
+        background: url(../img/icons/ScrollingArrowDown.png) no-repeat;
+        background-size: 12px auto;
+        background-position: 92% 39%;
+        background-color: white;
+    }
+    .short-desicription {
+        height: 110px;
+        padding-top: 10px;
+    }
+    hr {
+        border: none;
+        padding: 0;
+        margin: 0;
+    }
+    button {
+        color: rgb(255, 255, 255);
+        background-color: $light;
+        text-align: center;
+        padding: 15px 10px 15px 10px;
+        border-radius: 4px;
+        font-size: 100%;
+        cursor: pointer;
+    }
+    .add-url {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    .save-add {
+        width: 100%;
+        font-size: 18px;
+    }
+}
+@media screen and (min-width: 768px) {
+    h2{
+		margin-top: 15px;
+		font-size: 19px;
+	}
+	hr {
+  		 color: $mainText;
+  		 background-color: $mainText;
+		 height: 1px;
+		 margin-bottom: 50px;
+	}
+	.section2 .form2 input[type=text] {
+		height: 55px;
+		display: block;
+		margin-bottom: 25px;
+	}
+	.section2 .form2 textarea {
+		height: 130px;
+		display: block;
+		margin-bottom: 25px;
+	}
+	.section2 .form2 .box1 {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 4px;
+	}
+	.section2 .form2 .box1 .box1-left {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 99%;
+	}
+	.section2 .form2 .box1 textarea,
+	.section2 .form2 .box1 .box1-left {
+		width: 49.5%;
+	}
+	.section2 .short-desicription {
+		height: 130px;
+		
+		}
+	.section2 .form2 .box2 {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.section2 .form2 .box2 input {
+		width: 86%;
+		margin: 0;
+	}
+	.section2 .form2 .box2 .add-url {
+		display: block;
+		width: 11%;
+		margin: 0;
+	}
+	.section2 .form2 .box3 {
+		text-align: center;
+	}
+	.section2 .form2 .save-add {
+		display: inline-block;
+		width: 300px;
+		margin: 35px auto 10px auto;
+		text-align: center;
+	}
+}

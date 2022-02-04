@@ -1,0 +1,456 @@
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+  overflow: auto;
+}
+
+body {
+  min-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body, select, textarea, button {
+  color: #929292;
+  font-family: sans-serif;
+}
+
+input, select, textarea {
+  border: 1px solid #929292;
+  background-color: white;
+  border-radius: 4px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 3px solid #10266a;
+}
+
+a, h1 span {
+  color: #00adf1;
+}
+
+.section {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.section input[type=text],
+.section input[type=email],
+.section select,
+textarea {
+  width: 100%;
+  height: 50px;
+  padding: 14px 0 10px 15px;
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+
+.section select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .section input[type=text],
+  .section input[type=email],
+  .section select,
+  textarea {
+    font-size: 20px;
+  }
+}
+
+.section1 {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section1 .form1 select {
+  position: relative;
+}
+
+.section1 select {
+  display: inline-block;
+  background: url(../img/icons/ScrollingArrowDown.png) no-repeat;
+  background-size: 12px auto;
+  background-position: 93% 46%;
+  background-color: white;
+}
+
+.section1 h1 {
+  text-transform: capitalize;
+  color: #10266a;
+  font-size: 36px;
+  text-align: center;
+  padding-bottom: 40px;
+  line-height: 1.2;
+}
+
+.section1 input[type=email]:invalid {
+  border-color: rgba(255, 0, 0, 0.5);
+}
+
+@media screen and (min-width: 768px) {
+  .section1 h1 {
+    padding-top: 10px;
+    padding-bottom: 50px;
+  }
+  .section1 .form1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .section1 .form1 input[type=text],
+  .section1 .form1 input[type=email],
+  .section1 .form1 select {
+    width: 49%;
+    height: 50px;
+    display: block;
+    margin-bottom: 25px;
+  }
+}
+
+.section2 {
+  background-color: #eff7fa;
+  padding: 20px;
+  border: 1px solid #929292;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section2 h2 {
+  color: rgba(16, 38, 106, 0.5);
+  padding-bottom: 35px;
+  margin-top: 4px;
+  font-size: 16.5px;
+  text-transform: capitalize;
+}
+
+.section2 .box1-left select {
+  position: relative;
+}
+
+.section2 select {
+  background: url(../img/icons/ScrollingArrowDown.png) no-repeat;
+  background-size: 12px auto;
+  background-position: 92% 39%;
+  background-color: white;
+}
+
+.section2 .short-desicription {
+  height: 110px;
+  padding-top: 10px;
+}
+
+.section2 hr {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.section2 button {
+  color: white;
+  background-color: #00adf1;
+  text-align: center;
+  padding: 15px 10px 15px 10px;
+  border-radius: 4px;
+  font-size: 100%;
+  cursor: pointer;
+}
+
+.section2 .add-url {
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.section2 .save-add {
+  width: 100%;
+  font-size: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  h2 {
+    margin-top: 15px;
+    font-size: 19px;
+  }
+  hr {
+    color: #929292;
+    background-color: #929292;
+    height: 1px;
+    margin-bottom: 50px;
+  }
+  .section2 .form2 input[type=text] {
+    height: 55px;
+    display: block;
+    margin-bottom: 25px;
+  }
+  .section2 .form2 textarea {
+    height: 130px;
+    display: block;
+    margin-bottom: 25px;
+  }
+  .section2 .form2 .box1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 4px;
+  }
+  .section2 .form2 .box1 .box1-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 99%;
+  }
+  .section2 .form2 .box1 textarea,
+  .section2 .form2 .box1 .box1-left {
+    width: 49.5%;
+  }
+  .section2 .short-desicription {
+    height: 130px;
+  }
+  .section2 .form2 .box2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .section2 .form2 .box2 input {
+    width: 86%;
+    margin: 0;
+  }
+  .section2 .form2 .box2 .add-url {
+    display: block;
+    width: 11%;
+    margin: 0;
+  }
+  .section2 .form2 .box3 {
+    text-align: center;
+  }
+  .section2 .form2 .save-add {
+    display: inline-block;
+    width: 300px;
+    margin: 35px auto 10px auto;
+    text-align: center;
+  }
+}
+
+.section3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 40px;
+  line-height: 1.5;
+}
+
+.section3 label {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-bottom: 10px;
+  line-height: 1.2;
+  font-size: 86%;
+  cursor: pointer;
+}
+
+.section3 label input[type=checkbox] {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-right: 5px;
+  background-color: white;
+}
+
+.section3 label input[type=checkbox]:focus {
+  outline: 3px solid #10266a;
+}
+
+.section3 label input + .checkbox {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: 1px solid #929292;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+
+.section3 label input:checked + .checkbox {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/icons/checkmark.png);
+  background-size: 100% auto;
+}
+
+.section3 label input {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.section3 .agreement,
+.section3 .protection {
+  margin-bottom: 43px;
+  font-size: 86%;
+}
+
+.section3 .item2 button {
+  background-color: #0fc300;
+  color: white;
+  width: 100%;
+  text-transform: uppercase;
+  vertical-align: top;
+  font-size: 86%;
+  border-radius: 20px;
+  padding: 15px 15px 15px 15px;
+  cursor: pointer;
+}
+
+.section3 .item2 button::after {
+  content: "";
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: 10px;
+  width: 0;
+  height: 0;
+  border-width: 5px;
+  border-color: transparent white;
+  border-style: solid none solid solid;
+}
+
+@media screen and (min-width: 768px) {
+  .section3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 20px;
+  }
+  .section3 .item1 {
+    width: 84%;
+  }
+  .section3 .item2 {
+    display: block;
+    width: 15%;
+  }
+  .section3 .item2 button {
+    font-size: 18px;
+    border-radius: 30px;
+    margin-top: 10px;
+  }
+}
+/*# sourceMappingURL=styles1.css.map */

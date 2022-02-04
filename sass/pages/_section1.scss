@@ -1,0 +1,46 @@
+.section1 {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    
+    .form1 select {
+        position: relative;
+    }
+    select {
+        display: inline-block;
+        background: url(../img/icons/ScrollingArrowDown.png) no-repeat;
+        background-size: 12px auto;
+        background-position: 93% 46%;
+        background-color: white;
+    }
+    h1 {
+      text-transform: capitalize;
+      color: rgb(16, 38, 106);
+      font-size: 36px;
+      text-align: center;
+      padding-bottom: 40px;
+      line-height: 1.2;
+    }
+    input[type=email]:invalid {
+      border-color: rgba(255, 0, 0, 0.5);
+    }
+}
+@media screen and (min-width: 768px) {
+	.section1 h1 {
+		padding-top: 10px;
+		padding-bottom: 50px;
+	}
+	.section1 .form1 {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	.section1 .form1 input[type=text],
+	.section1 .form1 input[type=email],
+	.section1 .form1 select {
+		width: 49%;
+		height: 50px;
+		display: block;
+		margin-bottom: 25px;
+	}
+}
