@@ -1,4 +1,5 @@
 @import "../abstracts/variables";
+@import "../abstracts/";
 .section2 {
     background-color: rgb(239, 247, 250);
     padding: 20px;
@@ -20,17 +21,12 @@
     select {
         background: url(../img/icons/ScrollingArrowDown.png) no-repeat;
         background-size: 12px auto;
-        background-position: 92% 39%;
+        background-position: calc(100% - 24px) 42%;
         background-color: white;
     }
     .short-desicription {
         height: 110px;
         padding-top: 10px;
-    }
-    hr {
-        border: none;
-        padding: 0;
-        margin: 0;
     }
     button {
         color: rgb(255, 255, 255);
@@ -50,16 +46,10 @@
         font-size: 18px;
     }
 }
-@media screen and (min-width: 768px) {
+@include media(min, 900px) {
     h2{
 		margin-top: 15px;
 		font-size: 19px;
-	}
-	hr {
-  		 color: $mainText;
-  		 background-color: $mainText;
-		 height: 1px;
-		 margin-bottom: 50px;
 	}
 	.section2 .form2 input[type=text] {
 		height: 55px;
@@ -75,6 +65,8 @@
 		display: flex;
 		justify-content: space-between;
 		margin-bottom: 4px;
+		border-bottom: 1px solid $mainText;
+		gap: 25px;
 	}
 	.section2 .form2 .box1 .box1-left {
 		display: flex;
@@ -88,12 +80,12 @@
 	}
 	.section2 .short-desicription {
 		height: 130px;
-		
 		}
 	.section2 .form2 .box2 {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		margin-top: 25px;		
 	}
 	.section2 .form2 .box2 input {
 		width: 86%;
@@ -106,6 +98,7 @@
 	}
 	.section2 .form2 .box3 {
 		text-align: center;
+		margin-top: 20px;
 	}
 	.section2 .form2 .save-add {
 		display: inline-block;

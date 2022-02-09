@@ -1,9 +1,11 @@
 @import "../abstracts/variables";
+@import "../abstracts/mixins";
 .section3 {
     display: flex;
     flex-direction: column;
     margin-bottom: 40px;
     line-height: 1.5;
+    
   label {
     display: inline-flex;
     margin-bottom: 10px;
@@ -68,11 +70,10 @@
     border-style: solid none solid solid;
   }
 }
-@media screen and (min-width: 768px) {
+@include media(min, 900px) {
   .section3 {
 		display: flex;
 		flex-direction: row;
-		margin-top: 20px;
 	}
 	.section3 .item1 {
 		width: 84%;

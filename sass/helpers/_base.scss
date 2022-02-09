@@ -1,6 +1,8 @@
 @import "../abstracts/variables";
-body {
+@import "../abstracts/mixins";
+.wrapper {
     min-width: 375px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto; 
   }
@@ -41,7 +43,7 @@ body {
     overflow: hidden;
     cursor: pointer;
   }
-  @media screen and (min-width: 768px) {
+  @include media(min, 900px) {
     .section {
       margin-left: 40px;
       margin-right: 40px;

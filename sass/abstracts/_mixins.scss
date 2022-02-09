@@ -1,0 +1,5 @@
+@mixin media($scale, $width) {
+    @media screen and (#{$scale}-width: $width) {
+        @content;
+    }
+}
